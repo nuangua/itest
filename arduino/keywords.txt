@@ -1,0 +1,25 @@
+#######################################
+# NB-IoT Library
+####################################### 
+
+#######################################
+# CLasses
+####################################### 
+LED	KEYWORD1
+Button	KEYWORD1
+LCD	KEYWORD1
+MOSFET	KEYWORD1
+Relay	KEYWORD1
+RotaryAngle	KEYWORD1
+UV	KEYWORD1
+
+#######################################
+# Methods
+####################################### 
+on	KEYWORD2
+off	KEYWORD2
+reverse	KEYWORD2
+isOn	KEYWORD2
+isOff	KEYWORD2
+status	KEYWORD2
+value	KEYWORD2

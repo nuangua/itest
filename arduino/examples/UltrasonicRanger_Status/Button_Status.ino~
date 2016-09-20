@@ -1,0 +1,15 @@
+#include <Button.h>
+
+Button button(4);
+
+void setup()
+{
+	Serial.begin(9600);
+}
+
+void loop()
+{
+	delay(100);
+	Serial.print(" Button status is: ");
+	Serial.println(button.status());
+}

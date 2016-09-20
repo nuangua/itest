@@ -171,3 +171,86 @@ CONNECT
 2016-09-20 17:49:03,947|DEBUG|ATDevice.py[line:114]|Select rat failed.
 2016-09-20 17:49:03,948|DEBUG|ATDevice.py[line:67]|Serial port is not available. Please check serial port.
 2016-09-20 17:49:03,951|DEBUG|ATDevice.py[line:210]|['lo', 'ens33']
+2016-09-20 10:10:35,131|DEBUG|ATDevice.py[line:49]|Connecting to /dev/ttyACM0...
+2016-09-20 10:10:35,137|DEBUG|ATDevice.py[line:51]|Opened port: /dev/ttyACM0
+2016-09-20 10:10:35,139|DEBUG|ATDevice.py[line:71]|AT+COPS=2
+2016-09-20 10:10:36,144|DEBUG|ATDevice.py[line:85]|AT+COPS=2
+NO CARRIER
+
+OK
+
+2016-09-20 10:10:36,147|DEBUG|ATDevice.py[line:71]|AT+XACT=2
+2016-09-20 10:10:37,150|DEBUG|ATDevice.py[line:85]|AT+XACT=2
+OK
+
+2016-09-20 10:10:37,153|DEBUG|ATDevice.py[line:71]|AT+COPS=0
+2016-09-20 10:10:38,156|DEBUG|ATDevice.py[line:85]|AT+COPS=0
+OK
+
+2016-09-20 10:10:38,158|DEBUG|ATDevice.py[line:71]|AT+COPS?
+2016-09-20 10:10:39,162|DEBUG|ATDevice.py[line:85]|AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-09-20 10:10:39,164|DEBUG|ATDevice.py[line:71]|AT+COPS?
+2016-09-20 10:10:40,168|DEBUG|ATDevice.py[line:85]|AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-09-20 10:10:40,170|DEBUG|ATDevice.py[line:71]|AT+CGDCONT=1,"IP","3gnet"
+2016-09-20 10:10:40,220|DEBUG|ATDevice.py[line:85]|AT+CGDCONT=1,"IP","3gnet"
+OK
+
+2016-09-20 10:10:40,223|DEBUG|ATDevice.py[line:71]|AT+XDNS=1,1
+2016-09-20 10:10:41,226|DEBUG|ATDevice.py[line:85]|AT+XDNS=1,1
+OK
+
+2016-09-20 10:10:41,228|DEBUG|ATDevice.py[line:71]|AT+XDATACHANNEL=1,1,"/USBCDC/0","/USBHS/NCM/0",2,1
+2016-09-20 10:10:42,232|DEBUG|ATDevice.py[line:85]|AT+XDATACHANNEL=1,1,"/USBCDC/0","/USBHS/NCM/0",2,1
+OK
+
+2016-09-20 10:10:42,234|DEBUG|ATDevice.py[line:71]|AT+COPS=0
+2016-09-20 10:10:43,238|DEBUG|ATDevice.py[line:85]|AT+COPS=0
+OK
+
+2016-09-20 10:10:43,240|DEBUG|ATDevice.py[line:71]|AT+COPS?
+2016-09-20 10:10:44,244|DEBUG|ATDevice.py[line:85]|AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-09-20 10:10:44,246|DEBUG|ATDevice.py[line:71]|AT+CGACT=1,1
+2016-09-20 10:10:45,250|DEBUG|ATDevice.py[line:85]|AT+CGACT=1,1
+OK
+
+2016-09-20 10:10:45,252|DEBUG|ATDevice.py[line:71]|AT+CGDCONT?
+2016-09-20 10:10:45,304|DEBUG|ATDevice.py[line:85]|AT+CGDCONT?
++CGDCONT: 0,"IP","wonet.MNC001.MCC460.GPRS","10.9.113.131",0,0,0,0,0,0,0
+
++CGDCONT: 1,"IP","3gnet","10.8.249.96",0,0,0,0,0,0,0
+
+OK
+
+2016-09-20 10:10:45,306|DEBUG|ATDevice.py[line:71]|AT+XDNS?
+2016-09-20 10:10:46,310|DEBUG|ATDevice.py[line:85]|
++XDNS: 0, "0.0.0.0", "0.0.0.0"
+
++XDNS: 1, "123.123.123.123", "123.123.123.124"
+
+OK
+
+2016-09-20 10:10:46,313|DEBUG|ATDevice.py[line:71]|AT+CGDATA="M-RAW_IP",1
+2016-09-20 10:10:47,318|DEBUG|ATDevice.py[line:85]|AT+CGDATA="M-RAW_IP",1
+OK
+
+CONNECT
+
+2016-09-20 10:10:47,323|DEBUG|ATDevice.py[line:176]|enp0s17u1i6
+2016-09-20 10:10:47,325|DEBUG|ATDevice.py[line:180]|interface name: enp0s17u1i6
+2016-09-20 10:10:47,447|DEBUG|ATDevice.py[line:188]|ifconfig configuration list:
+2016-09-20 10:10:47,470|DEBUG|ATDevice.py[line:190]|route table:
+2016-09-20 10:10:47,878|DEBUG|ATDevice.py[line:192]|DNS configuration:
+2016-09-20 10:10:47,893|DEBUG|ATDevice.py[line:194]|ping server 54.223.54.250:
+2016-09-20 10:10:51,955|DEBUG|ATDevice.py[line:210]|['enp0s17u1i6', 'sit0', 'wlan0', 'usb0', 'enp0s17u1i10', 'lo', 'enp0s17u1i8']

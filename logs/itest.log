@@ -124,3 +124,50 @@ CONNECT
 2016-09-20 04:03:45,433|DEBUG|ATDevice.py[line:191]|DNS configuration:
 2016-09-20 04:03:45,449|DEBUG|ATDevice.py[line:193]|ping server 54.223.54.250:
 2016-09-20 04:03:49,501|DEBUG|ATDevice.py[line:209]|['enp0s17u1i6', 'sit0', 'wlan0', 'usb0', 'enp0s17u1i10', 'lo', 'enp0s17u1i8']
+2016-09-20 17:13:40,332|DEBUG|ATDevice.py[line:49]|Connecting to /dev/ttyACM0...
+2016-09-20 17:13:59,293|DEBUG|ATDevice.py[line:49]|Connecting to /dev/ttyACM0...
+2016-09-20 17:13:59,305|DEBUG|ATDevice.py[line:51]|Opened port: /dev/ttyACM0
+2016-09-20 17:13:59,307|DEBUG|ATDevice.py[line:71]|AT+COPS=2
+2016-09-20 17:14:19,352|DEBUG|ATDevice.py[line:85]|
+2016-09-20 17:14:19,353|DEBUG|ATDevice.py[line:71]|AT+XACT=2
+2016-09-20 17:14:39,397|DEBUG|ATDevice.py[line:85]|
+2016-09-20 17:14:39,397|DEBUG|ATDevice.py[line:114]|Select rat failed.
+2016-09-20 17:14:39,398|DEBUG|ATDevice.py[line:71]|AT+COPS?
+2016-09-20 17:14:59,442|DEBUG|ATDevice.py[line:85]|
+2016-09-20 17:14:59,443|DEBUG|ATDevice.py[line:71]|AT+XACT=2
+2016-09-20 17:15:19,488|DEBUG|ATDevice.py[line:85]|
+2016-09-20 17:15:19,489|DEBUG|ATDevice.py[line:114]|Select rat failed.
+2016-09-20 17:15:19,490|DEBUG|ATDevice.py[line:71]|AT+COPS?
+2016-09-20 17:17:30,779|DEBUG|ATDevice.py[line:49]|Connecting to /dev/ttyACM0...
+2016-09-20 17:17:30,782|DEBUG|ATDevice.py[line:51]|Opened port: /dev/ttyACM0
+2016-09-20 17:17:30,783|DEBUG|ATDevice.py[line:71]|AT+COPS=2
+2016-09-20 17:17:50,825|DEBUG|ATDevice.py[line:85]|
+2016-09-20 17:17:50,826|DEBUG|ATDevice.py[line:71]|AT+XACT=2
+2016-09-20 17:18:10,870|DEBUG|ATDevice.py[line:85]|
+2016-09-20 17:18:10,870|DEBUG|ATDevice.py[line:114]|Select rat failed.
+2016-09-20 17:18:10,871|DEBUG|ATDevice.py[line:71]|AT+COPS?
+2016-09-20 17:18:30,912|DEBUG|ATDevice.py[line:85]|
+2016-09-20 17:18:30,915|DEBUG|ATDevice.py[line:71]|AT+XACT=2
+2016-09-20 17:18:50,957|DEBUG|ATDevice.py[line:85]|
+2016-09-20 17:18:50,958|DEBUG|ATDevice.py[line:114]|Select rat failed.
+2016-09-20 17:18:50,959|DEBUG|ATDevice.py[line:71]|AT+COPS?
+2016-09-20 17:19:10,998|DEBUG|ATDevice.py[line:85]|
+2016-09-20 17:19:10,999|DEBUG|ATDevice.py[line:210]|['enx000011121318', 'lo', 'enx000011121314', 'enx000011121316', 'ens33']
+2016-09-20 17:43:17,189|DEBUG|ATDevice.py[line:49]|Connecting to /dev/ttyACM0...
+2016-09-20 17:43:28,914|DEBUG|ATDevice.py[line:49]|Connecting to /dev/ttyACM0...
+2016-09-20 17:43:28,916|DEBUG|ATDevice.py[line:51]|Opened port: /dev/ttyACM0
+2016-09-20 17:43:28,917|DEBUG|ATDevice.py[line:71]|AT+COPS=2
+2016-09-20 17:43:48,964|DEBUG|ATDevice.py[line:85]|
+2016-09-20 17:43:48,965|DEBUG|ATDevice.py[line:71]|AT+XACT=2
+2016-09-20 17:44:09,008|DEBUG|ATDevice.py[line:85]|
+2016-09-20 17:44:09,009|DEBUG|ATDevice.py[line:114]|Select rat failed.
+2016-09-20 17:44:09,010|DEBUG|ATDevice.py[line:71]|AT+COPS?
+2016-09-20 17:49:03,940|DEBUG|ATDevice.py[line:47]|Waiting for device...
+2016-09-20 17:49:03,942|DEBUG|ATDevice.py[line:67]|Serial port is not available. Please check serial port.
+2016-09-20 17:49:03,944|DEBUG|ATDevice.py[line:67]|Serial port is not available. Please check serial port.
+2016-09-20 17:49:03,945|DEBUG|ATDevice.py[line:114]|Select rat failed.
+2016-09-20 17:49:03,946|DEBUG|ATDevice.py[line:67]|Serial port is not available. Please check serial port.
+2016-09-20 17:49:03,947|DEBUG|ATDevice.py[line:67]|Serial port is not available. Please check serial port.
+2016-09-20 17:49:03,947|DEBUG|ATDevice.py[line:114]|Select rat failed.
+2016-09-20 17:49:03,948|DEBUG|ATDevice.py[line:67]|Serial port is not available. Please check serial port.
+2016-09-20 17:49:03,951|DEBUG|ATDevice.py[line:210]|['lo', 'ens33']

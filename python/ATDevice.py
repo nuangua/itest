@@ -9,8 +9,9 @@ import logging
 import logging.config
 #import Log
 import psutil
+import sys
 
-logging.config.fileConfig("/home/root/itest/config/logging.conf")
+logging.config.fileConfig(sys.path[0] + "/../config/logging.conf")
 logger = logging.getLogger("itest")
 
 #serial port config

@@ -1,7 +1,8 @@
 import logging
 import logging.config
+import sys
 
-LOG_CFG_PATH="~/itest/config/logger.conf"
+LOG_CFG_PATH= sys.path[0] + "/../config/logging.conf"
 LOGGER_NAME="itest"
 
 logging.config.fileConfig(LOG_CFG_PATH)

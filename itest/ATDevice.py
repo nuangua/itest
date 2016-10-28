@@ -11,7 +11,8 @@ import logging.config
 import psutil
 import sys
 
-logging.config.fileConfig(sys.path[0] + "/../config/logging.conf")
+LOG_CFG_PATH="/home/root/itest/config/logging.conf"
+logging.config.fileConfig(LOG_CFG_PATH)
 logger = logging.getLogger("itest")
 
 #serial port config
@@ -114,6 +115,7 @@ def attachDev(ratSetting):
         logger.debug("Select rat failed.")
         return False
     output, flag = waitAT('AT+COPS=0', 'OK', WAIT_TIME)
+    waitAT('AT+COPS?','OK', WAIT_TIME)
     return flag
 
 #detach device to ide status
@@ -150,6 +152,7 @@ def activatePdpContext():
 
         waitAT('AT+COPS=0', 'OK', WAIT_TIME)
         waitAT('AT+COPS?', 'OK', WAIT_TIME)
+        waitAT('AT+CGACT=0,1', 'OK', WAIT_TIME)
         waitAT('AT+CGACT=1,1', 'OK', WAIT_TIME)
         output,flag = waitAT('AT+CGDCONT?', 'OK', WAIT_TIME)
         if flag:
@@ -168,8 +171,8 @@ def activatePdpContext():
                     dnsList.append(dns_ip[1].strip())
                     dnsList.append(dns_ip[2].strip())
         waitAT('AT+CGDATA="M-RAW_IP",1', 'CONNECT',WAIT_TIME)
-        ip_addr = ipList[1]
-        apn = apnList[1]
+        ip_addr = ipList[0]
+        apn = apnList[0]
 
         interfaceName=None
         for item in listNetCards():
@@ -183,6 +186,7 @@ def activatePdpContext():
         subprocess.call('ifconfig ' + interfaceName + ' up', shell=True)
         subprocess.call('ifconfig ' + interfaceName + ' -arp', shell=True)
         subprocess.call('route add default gw ' + ip_addr + ' ' + interfaceName, shell=True)
+        subprocess.call('echo "nameserver 8.8.8.8" > /etc/resolv.conf',shell=True)
         for nameserver in dnsList:
             subprocess.call('echo "nameserver ' + nameserver + '" >> /etc/resolv.conf', shell=True)
         logger.debug('ifconfig configuration list:')
@@ -191,8 +195,6 @@ def activatePdpContext():
         subprocess.call('route', shell=True)
         logger.debug('DNS configuration:')
         subprocess.call('cat /etc/resolv.conf', shell=True)
-        logger.debug('ping server 54.223.54.250:')
-        subprocess.call('ping -c 5 54.223.54.250', shell=True)
 
 #list network card names
 def listNetCards():

@@ -23,5 +23,5 @@ setup(
     description="itest module for automation testing",
     author="David Gu",
     url="https://github.com/nuangua/itest",
-    py_modules=MOUDLE_LIST,
+    py_modules=['ATDevice', 'Log'],
         )

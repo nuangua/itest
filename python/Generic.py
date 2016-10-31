@@ -28,5 +28,6 @@ def startWiresharkTraceThread(_tracepath):
 
 #stop capturing wireshark traces
 def stopWiresharkTrace():
+    Log.debug('stop capturing wireshark trace')
     subprocess.call('killall -9 tcpdump', shell=True)
 

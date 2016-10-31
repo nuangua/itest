@@ -12612,3 +12612,1578 @@ CONNECT
 2016-10-31 11:09:51,994|DEBUG|Log.py[line:12]|status=0,percentage=100%
 2016-10-31 11:09:56,061|DEBUG|Log.py[line:12]|5
 2016-10-31 11:09:56,063|DEBUG|Log.py[line:12]|network connection is alive
+2016-10-31 11:26:04,127|DEBUG|Log.py[line:12]|Connecting to /dev/ttyACM0...
+2016-10-31 11:26:04,134|DEBUG|Log.py[line:12]|Opened port: /dev/ttyACM0
+2016-10-31 11:26:04,136|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=2
+2016-10-31 11:26:05,140|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=2
+NO CARRIER
+
+OK
+
+2016-10-31 11:26:05,143|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XACT=2
+2016-10-31 11:26:06,145|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XACT=2
+OK
+
+2016-10-31 11:26:06,147|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=0
+2016-10-31 11:26:07,151|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=0
+OK
+
+2016-10-31 11:26:07,153|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:26:08,157|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 11:26:08,160|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:26:09,163|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 11:26:09,166|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:26:09,219|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 11:26:09,222|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDCONT=1,"IP","3gnet"
+2016-10-31 11:26:10,225|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDCONT=1,"IP","3gnet"
+OK
+
+2016-10-31 11:26:10,227|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDNS=1,1
+2016-10-31 11:26:11,231|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDNS=1,1
+OK
+
+2016-10-31 11:26:11,233|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDATACHANNEL=1,1,"/USBCDC/0","/USBHS/NCM/0",2,1
+2016-10-31 11:26:12,237|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDATACHANNEL=1,1,"/USBCDC/0","/USBHS/NCM/0",2,1
+OK
+
+2016-10-31 11:26:12,239|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=0
+2016-10-31 11:26:13,243|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=0
+OK
+
+2016-10-31 11:26:13,245|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:26:14,249|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 11:26:14,251|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGACT=0,1
+2016-10-31 11:26:15,307|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: 
+OK
+
+2016-10-31 11:26:15,310|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGACT=1,1
+2016-10-31 11:26:16,314|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGACT=1,1
+OK
+
+2016-10-31 11:26:16,316|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDCONT?
+2016-10-31 11:26:17,320|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDCONT?
++CGDCONT: 1,"IP","3gnet.MNC001.MCC460.GPRS","172.16.33.197",0,0,0,0,0,0
+
+OK
+
+2016-10-31 11:26:17,322|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDNS?
+2016-10-31 11:26:18,326|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDNS?
++XDNS: 1, "123.123.123.123", "123.123.123.124"
+
+OK
+
+2016-10-31 11:26:18,328|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDATA="M-RAW_IP",1
+2016-10-31 11:26:19,333|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDATA="M-RAW_IP",1
+OK
+
+
+CONNECT
+
+
+2016-10-31 11:26:19,338|DEBUG|Log.py[line:12]|wwp0s17u1i12
+2016-10-31 11:26:19,389|DEBUG|Log.py[line:12]|wwp0s17u1i10
+2016-10-31 11:26:19,390|DEBUG|Log.py[line:12]|usb0
+2016-10-31 11:26:19,392|DEBUG|Log.py[line:12]|lo
+2016-10-31 11:26:19,393|DEBUG|Log.py[line:12]|wlan0
+2016-10-31 11:26:19,395|DEBUG|Log.py[line:12]|wwp0s17u1i8
+2016-10-31 11:26:19,397|DEBUG|Log.py[line:12]|sit0
+2016-10-31 11:26:19,399|DEBUG|Log.py[line:12]|wwp0s17u1i6
+2016-10-31 11:26:19,400|DEBUG|Log.py[line:12]|interface name: wwp0s17u1i6
+2016-10-31 11:26:19,520|DEBUG|Log.py[line:12]|ifconfig configuration list:
+2016-10-31 11:26:19,544|DEBUG|Log.py[line:12]|route table:
+2016-10-31 11:26:19,967|DEBUG|Log.py[line:12]|DNS configuration:
+2016-10-31 11:26:48,085|DEBUG|Log.py[line:12]|Connecting to /dev/ttyACM0...
+2016-10-31 11:26:48,091|DEBUG|Log.py[line:12]|Opened port: /dev/ttyACM0
+2016-10-31 11:26:48,093|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=2
+2016-10-31 11:27:09,005|DEBUG|Log.py[line:12]|Connecting to /dev/ttyACM0...
+2016-10-31 11:27:09,013|DEBUG|Log.py[line:12]|Opened port: /dev/ttyACM0
+2016-10-31 11:27:09,015|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=2
+2016-10-31 11:27:10,020|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=2
+OK
+
+2016-10-31 11:27:10,022|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XACT=2
+2016-10-31 11:27:11,026|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XACT=2
+OK
+
+2016-10-31 11:27:11,028|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=0
+2016-10-31 11:27:12,032|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=0
+OK
+
+2016-10-31 11:27:12,034|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:27:13,038|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
++COPS: 0,0,"CHN-UNICOM",7
+
++PBREADY
+
+2016-10-31 11:27:13,041|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:27:13,043|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 11:27:13,053|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:27:13,060|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 11:27:13,063|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDCONT=1,"IP","3gnet"
+2016-10-31 11:27:14,067|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDCONT=1,"IP","3gnet"
+OK
+
+2016-10-31 11:27:14,069|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDNS=1,1
+2016-10-31 11:27:14,129|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDNS=1,1
+OK
+
+2016-10-31 11:27:14,131|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDATACHANNEL=1,1,"/USBCDC/0","/USBHS/NCM/0",2,1
+2016-10-31 11:27:14,133|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDATACHANNEL=1,1,"/USBCDC/0","/USBHS/NCM/0",2,1
+OK
+
+2016-10-31 11:27:14,135|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=0
+2016-10-31 11:27:15,139|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=0
+OK
+
+2016-10-31 11:27:15,141|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:27:16,144|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 11:27:16,146|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGACT=0,1
+2016-10-31 11:27:17,150|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGACT=0,1
+OK
+
+2016-10-31 11:27:17,152|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGACT=1,1
+2016-10-31 11:27:18,156|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGACT=1,1
+OK
+
+2016-10-31 11:27:18,158|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDCONT?
+2016-10-31 11:27:19,161|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDCONT?
++CGDCONT: 1,"IP","3gnet.MNC001.MCC460.GPRS","172.16.216.18",0,0,0,0,0,0
+
+OK
+
+2016-10-31 11:27:19,164|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDNS?
+2016-10-31 11:27:19,217|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDNS?
++XDNS: 1, "123.123.123.123", "123.123.123.124"
+
+OK
+
+2016-10-31 11:27:19,220|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDATA="M-RAW_IP",1
+2016-10-31 11:27:20,224|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDATA="M-RAW_IP",1
+OK
+
+
+CONNECT
+
+
+2016-10-31 11:27:20,229|DEBUG|Log.py[line:12]|wwp0s17u1i12
+2016-10-31 11:27:20,231|DEBUG|Log.py[line:12]|wwp0s17u1i10
+2016-10-31 11:27:20,232|DEBUG|Log.py[line:12]|usb0
+2016-10-31 11:27:20,234|DEBUG|Log.py[line:12]|lo
+2016-10-31 11:27:20,236|DEBUG|Log.py[line:12]|wlan0
+2016-10-31 11:27:20,237|DEBUG|Log.py[line:12]|wwp0s17u1i8
+2016-10-31 11:27:20,239|DEBUG|Log.py[line:12]|sit0
+2016-10-31 11:27:20,240|DEBUG|Log.py[line:12]|wwp0s17u1i6
+2016-10-31 11:27:20,242|DEBUG|Log.py[line:12]|interface name: wwp0s17u1i6
+2016-10-31 11:27:20,355|DEBUG|Log.py[line:12]|ifconfig configuration list:
+2016-10-31 11:27:20,379|DEBUG|Log.py[line:12]|route table:
+2016-10-31 11:27:20,822|DEBUG|Log.py[line:12]|DNS configuration:
+2016-10-31 11:27:49,970|DEBUG|Log.py[line:12]|30
+2016-10-31 11:27:49,972|DEBUG|Log.py[line:12]|status=0,percentage=100%
+2016-10-31 11:31:48,731|DEBUG|Log.py[line:12]|Connecting to /dev/ttyACM0...
+2016-10-31 11:31:48,738|DEBUG|Log.py[line:12]|Opened port: /dev/ttyACM0
+2016-10-31 11:31:48,741|DEBUG|Log.py[line:12]|entering start wireshark trace
+2016-10-31 11:31:48,742|DEBUG|Log.py[line:12]|start new thread for capturing wireshark trace
+2016-10-31 11:31:48,750|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=2
+2016-10-31 11:31:49,756|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=2
+NO CARRIER
+
+OK
+
+2016-10-31 11:31:49,759|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XACT=2
+2016-10-31 11:31:50,762|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XACT=2
+OK
+
+2016-10-31 11:31:50,765|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=0
+2016-10-31 11:31:51,769|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=0
+OK
+
+2016-10-31 11:31:51,771|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:31:52,774|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 11:31:52,777|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:31:53,780|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 11:31:53,783|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:31:53,839|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 11:31:53,841|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDCONT=1,"IP","3gnet"
+2016-10-31 11:31:54,845|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDCONT=1,"IP","3gnet"
+OK
+
+2016-10-31 11:31:54,848|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDNS=1,1
+2016-10-31 11:31:55,851|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDNS=1,1
+OK
+
+2016-10-31 11:31:55,854|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDATACHANNEL=1,1,"/USBCDC/0","/USBHS/NCM/0",2,1
+2016-10-31 11:31:56,858|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDATACHANNEL=1,1,"/USBCDC/0","/USBHS/NCM/0",2,1
+OK
+
+2016-10-31 11:31:56,860|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=0
+2016-10-31 11:31:57,863|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=0
+OK
+
+2016-10-31 11:31:57,866|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:31:58,870|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 11:31:58,872|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGACT=0,1
+2016-10-31 11:31:59,930|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: 
+OK
+
+2016-10-31 11:31:59,932|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGACT=1,1
+2016-10-31 11:32:00,935|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGACT=1,1
+OK
+
+2016-10-31 11:32:00,938|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDCONT?
+2016-10-31 11:32:01,941|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDCONT?
++CGDCONT: 1,"IP","3gnet.MNC001.MCC460.GPRS","10.28.33.126",0,0,0,0,0,0
+
+OK
+
+2016-10-31 11:32:01,944|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDNS?
+2016-10-31 11:32:02,948|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDNS?
++XDNS: 1, "123.123.123.123", "123.123.123.124"
+
+OK
+
+2016-10-31 11:32:02,950|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDATA="M-RAW_IP",1
+2016-10-31 11:32:03,954|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDATA="M-RAW_IP",1
+OK
+
+
+CONNECT
+
+
+2016-10-31 11:32:03,959|DEBUG|Log.py[line:12]|wwp0s17u1i12
+2016-10-31 11:32:04,018|DEBUG|Log.py[line:12]|wwp0s17u1i10
+2016-10-31 11:32:04,020|DEBUG|Log.py[line:12]|usb0
+2016-10-31 11:32:04,022|DEBUG|Log.py[line:12]|lo
+2016-10-31 11:32:04,023|DEBUG|Log.py[line:12]|wlan0
+2016-10-31 11:32:04,025|DEBUG|Log.py[line:12]|wwp0s17u1i8
+2016-10-31 11:32:04,027|DEBUG|Log.py[line:12]|sit0
+2016-10-31 11:32:04,028|DEBUG|Log.py[line:12]|wwp0s17u1i6
+2016-10-31 11:32:04,030|DEBUG|Log.py[line:12]|interface name: wwp0s17u1i6
+2016-10-31 11:32:04,162|DEBUG|Log.py[line:12]|ifconfig configuration list:
+2016-10-31 11:32:04,188|DEBUG|Log.py[line:12]|route table:
+2016-10-31 11:32:04,595|DEBUG|Log.py[line:12]|DNS configuration:
+2016-10-31 11:36:03,351|DEBUG|Log.py[line:12]|Connecting to /dev/ttyACM0...
+2016-10-31 11:36:03,357|DEBUG|Log.py[line:12]|Opened port: /dev/ttyACM0
+2016-10-31 11:36:03,361|DEBUG|Log.py[line:12]|start new thread for capturing wireshark trace
+2016-10-31 11:36:03,363|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=2
+2016-10-31 11:36:03,363|DEBUG|Log.py[line:12]|entering start wireshark trace
+2016-10-31 11:36:04,369|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=2
+NO CARRIER
+
+OK
+
+2016-10-31 11:36:04,372|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XACT=2
+2016-10-31 11:36:05,376|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XACT=2
+OK
+
+2016-10-31 11:36:05,378|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=0
+2016-10-31 11:36:06,382|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=0
+OK
+
+2016-10-31 11:36:06,384|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:36:07,388|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 11:36:07,390|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:36:08,394|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 11:36:08,396|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:36:08,451|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 11:36:08,453|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDCONT=1,"IP","3gnet"
+2016-10-31 11:36:09,457|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDCONT=1,"IP","3gnet"
+OK
+
+2016-10-31 11:36:09,459|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDNS=1,1
+2016-10-31 11:36:10,463|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDNS=1,1
+OK
+
+2016-10-31 11:36:10,465|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDATACHANNEL=1,1,"/USBCDC/0","/USBHS/NCM/0",2,1
+2016-10-31 11:36:11,468|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDATACHANNEL=1,1,"/USBCDC/0","/USBHS/NCM/0",2,1
+OK
+
+2016-10-31 11:36:11,470|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=0
+2016-10-31 11:36:12,475|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=0
+OK
+
+2016-10-31 11:36:12,477|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:36:13,481|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 11:36:13,483|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGACT=0,1
+2016-10-31 11:36:14,537|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: 
+OK
+
+2016-10-31 11:36:14,539|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGACT=1,1
+2016-10-31 11:36:15,543|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGACT=1,1
+OK
+
+2016-10-31 11:36:15,545|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDCONT?
+2016-10-31 11:36:16,549|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDCONT?
++CGDCONT: 1,"IP","3gnet.MNC001.MCC460.GPRS","10.52.113.213",0,0,0,0,0,0
+
+OK
+
+2016-10-31 11:36:16,551|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDNS?
+2016-10-31 11:36:17,555|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDNS?
++XDNS: 1, "123.123.123.123", "123.123.123.124"
+
+OK
+
+2016-10-31 11:36:17,557|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDATA="M-RAW_IP",1
+2016-10-31 11:36:18,562|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDATA="M-RAW_IP",1
+OK
+
+
+CONNECT
+
+
+2016-10-31 11:36:18,567|DEBUG|Log.py[line:12]|wwp0s17u1i12
+2016-10-31 11:36:18,608|DEBUG|Log.py[line:12]|wwp0s17u1i10
+2016-10-31 11:36:18,610|DEBUG|Log.py[line:12]|usb0
+2016-10-31 11:36:18,612|DEBUG|Log.py[line:12]|lo
+2016-10-31 11:36:18,614|DEBUG|Log.py[line:12]|wlan0
+2016-10-31 11:36:18,615|DEBUG|Log.py[line:12]|wwp0s17u1i8
+2016-10-31 11:36:18,617|DEBUG|Log.py[line:12]|sit0
+2016-10-31 11:36:18,619|DEBUG|Log.py[line:12]|wwp0s17u1i6
+2016-10-31 11:36:18,620|DEBUG|Log.py[line:12]|interface name: wwp0s17u1i6
+2016-10-31 11:36:18,761|DEBUG|Log.py[line:12]|ifconfig configuration list:
+2016-10-31 11:36:18,787|DEBUG|Log.py[line:12]|route table:
+2016-10-31 11:36:19,201|DEBUG|Log.py[line:12]|DNS configuration:
+2016-10-31 11:36:19,217|DEBUG|Log.py[line:12]|start ftp uploading
+2016-10-31 11:36:19,220|DEBUG|Log.py[line:12]|ftp_ip=54.223.54.250
+
+2016-10-31 11:36:19,376|INFO|Log.py[line:15]|220 Welcome to Intel PRD_iCDG_VER_FT FTP service.
+2016-10-31 11:39:11,561|DEBUG|Log.py[line:12]|Waiting for device...
+2016-10-31 11:39:11,565|DEBUG|Log.py[line:12]|entering start wireshark trace
+2016-10-31 11:39:11,566|DEBUG|Log.py[line:12]|start new thread for capturing wireshark trace
+2016-10-31 11:39:11,574|DEBUG|Log.py[line:12]|Serial port is not available. Please check serial port.
+2016-10-31 11:39:11,577|DEBUG|Log.py[line:12]|Serial port is not available. Please check serial port.
+2016-10-31 11:39:11,578|DEBUG|Log.py[line:12]|Select rat failed.
+2016-10-31 11:39:11,580|DEBUG|Log.py[line:12]|Serial port is not available. Please check serial port.
+2016-10-31 11:39:11,582|DEBUG|Log.py[line:12]|Serial port is not available. Please check serial port.
+2016-10-31 11:39:11,584|DEBUG|Log.py[line:12]|Select rat failed.
+2016-10-31 11:39:11,586|DEBUG|Log.py[line:12]|Serial port is not available. Please check serial port.
+2016-10-31 11:39:11,587|DEBUG|Log.py[line:12]|start ftp downloading
+2016-10-31 11:39:11,591|INFO|Log.py[line:15]|ftp downloading...
+2016-10-31 11:39:11,593|DEBUG|Log.py[line:12]|ftp_ip=54.223.54.250
+
+2016-10-31 11:39:13,866|INFO|Log.py[line:15]|220 Welcome to Intel PRD_iCDG_VER_FT FTP service.
+2016-10-31 11:39:16,596|INFO|Log.py[line:15]|ftp downloading...
+2016-10-31 11:39:21,615|INFO|Log.py[line:15]|ftp downloading...
+2016-10-31 11:39:26,622|INFO|Log.py[line:15]|ftp downloading...
+2016-10-31 11:39:31,629|INFO|Log.py[line:15]|ftp downloading...
+2016-10-31 11:39:36,637|INFO|Log.py[line:15]|ftp downloading...
+2016-10-31 11:39:41,644|INFO|Log.py[line:15]|ftp downloading...
+2016-10-31 11:39:46,649|INFO|Log.py[line:15]|ftp downloading...
+2016-10-31 11:39:51,661|INFO|Log.py[line:15]|ftp downloading...
+2016-10-31 11:39:56,665|INFO|Log.py[line:15]|ftp downloading...
+2016-10-31 11:40:01,672|INFO|Log.py[line:15]|ftp downloading...
+2016-10-31 11:40:06,676|INFO|Log.py[line:15]|ftp downloading...
+2016-10-31 11:40:11,681|DEBUG|Log.py[line:12]|killing ftp thread...
+2016-10-31 11:42:12,096|DEBUG|Log.py[line:12]|Waiting for device...
+2016-10-31 11:42:12,100|DEBUG|Log.py[line:12]|entering start wireshark trace
+2016-10-31 11:42:12,101|DEBUG|Log.py[line:12]|start new thread for capturing wireshark trace
+2016-10-31 11:42:12,108|DEBUG|Log.py[line:12]|Serial port is not available. Please check serial port.
+2016-10-31 11:42:12,111|DEBUG|Log.py[line:12]|Serial port is not available. Please check serial port.
+2016-10-31 11:42:12,113|DEBUG|Log.py[line:12]|Select rat failed.
+2016-10-31 11:42:12,117|DEBUG|Log.py[line:12]|Serial port is not available. Please check serial port.
+2016-10-31 11:42:12,119|DEBUG|Log.py[line:12]|Serial port is not available. Please check serial port.
+2016-10-31 11:42:12,121|DEBUG|Log.py[line:12]|Select rat failed.
+2016-10-31 11:42:12,122|DEBUG|Log.py[line:12]|Serial port is not available. Please check serial port.
+2016-10-31 11:42:41,238|DEBUG|Log.py[line:12]|30
+2016-10-31 11:42:41,283|DEBUG|Log.py[line:12]|status=0,percentage=100%
+2016-10-31 11:43:36,606|DEBUG|Log.py[line:12]|Connecting to /dev/ttyACM0...
+2016-10-31 11:43:36,613|DEBUG|Log.py[line:12]|Opened port: /dev/ttyACM0
+2016-10-31 11:43:36,616|DEBUG|Log.py[line:12]|entering start wireshark trace
+2016-10-31 11:43:36,617|DEBUG|Log.py[line:12]|start new thread for capturing wireshark trace
+2016-10-31 11:43:36,625|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=2
+2016-10-31 11:43:37,630|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=2
+OK
+
+2016-10-31 11:43:37,633|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XACT=2
+2016-10-31 11:43:38,636|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XACT=2
+OK
+
+2016-10-31 11:43:38,639|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=0
+2016-10-31 11:43:39,642|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=0
+OK
+
+2016-10-31 11:43:39,644|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:43:40,648|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
++COPS: 0,0,"CHN-UNICOM",7
+
+2016-10-31 11:43:40,650|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:43:41,654|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 11:43:41,656|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:43:41,712|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 11:43:41,715|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDCONT=1,"IP","3gnet"
+2016-10-31 11:43:42,718|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDCONT=1,"IP","3gnet"
+OK
+
+2016-10-31 11:43:42,720|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDNS=1,1
+2016-10-31 11:43:43,724|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDNS=1,1
+OK
+
+2016-10-31 11:43:43,726|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDATACHANNEL=1,1,"/USBCDC/0","/USBHS/NCM/0",2,1
+2016-10-31 11:43:44,730|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDATACHANNEL=1,1,"/USBCDC/0","/USBHS/NCM/0",2,1
+OK
+
+2016-10-31 11:43:44,732|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=0
+2016-10-31 11:43:45,736|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=0
+OK
+
+2016-10-31 11:43:45,738|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:43:46,742|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 11:43:46,744|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGACT=0,1
+2016-10-31 11:43:47,791|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: 
+OK
+
+2016-10-31 11:43:47,793|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGACT=1,1
+2016-10-31 11:43:48,797|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGACT=1,1
+OK
+
+2016-10-31 11:43:48,799|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDCONT?
+2016-10-31 11:43:49,803|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDCONT?
++CGDCONT: 1,"IP","3gnet.MNC001.MCC460.GPRS","10.62.222.100",0,0,0,0,0,0
+
+OK
+
+2016-10-31 11:43:49,806|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDNS?
+2016-10-31 11:43:50,809|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDNS?
++XDNS: 1, "123.123.123.123", "123.123.123.124"
+
+OK
+
+2016-10-31 11:43:50,812|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDATA="M-RAW_IP",1
+2016-10-31 11:43:51,816|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDATA="M-RAW_IP",1
+OK
+
+
+CONNECT
+
+
+2016-10-31 11:43:51,821|DEBUG|Log.py[line:12]|wwp0s17u1i12
+2016-10-31 11:43:51,873|DEBUG|Log.py[line:12]|wwp0s17u1i10
+2016-10-31 11:43:51,875|DEBUG|Log.py[line:12]|usb0
+2016-10-31 11:43:51,876|DEBUG|Log.py[line:12]|lo
+2016-10-31 11:43:51,878|DEBUG|Log.py[line:12]|wlan0
+2016-10-31 11:43:51,880|DEBUG|Log.py[line:12]|wwp0s17u1i8
+2016-10-31 11:43:51,881|DEBUG|Log.py[line:12]|sit0
+2016-10-31 11:43:51,883|DEBUG|Log.py[line:12]|wwp0s17u1i6
+2016-10-31 11:43:51,884|DEBUG|Log.py[line:12]|interface name: wwp0s17u1i6
+2016-10-31 11:43:52,009|DEBUG|Log.py[line:12]|ifconfig configuration list:
+2016-10-31 11:43:52,034|DEBUG|Log.py[line:12]|route table:
+2016-10-31 11:43:52,446|DEBUG|Log.py[line:12]|DNS configuration:
+2016-10-31 11:44:21,543|DEBUG|Log.py[line:12]|30
+2016-10-31 11:44:21,586|DEBUG|Log.py[line:12]|status=0,percentage=100%
+2016-10-31 11:46:43,765|DEBUG|Log.py[line:12]|Connecting to /dev/ttyACM0...
+2016-10-31 11:46:43,771|DEBUG|Log.py[line:12]|Opened port: /dev/ttyACM0
+2016-10-31 11:46:43,775|DEBUG|Log.py[line:12]|entering start wireshark trace
+2016-10-31 11:46:43,776|DEBUG|Log.py[line:12]|start new thread for capturing wireshark trace
+2016-10-31 11:46:48,785|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=2
+2016-10-31 11:46:49,791|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=2
+NO CARRIER
+
+OK
+
+2016-10-31 11:46:49,793|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XACT=2
+2016-10-31 11:46:50,797|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XACT=2
+OK
+
+2016-10-31 11:46:50,799|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=0
+2016-10-31 11:46:51,803|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=0
+OK
+
+2016-10-31 11:46:51,805|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:46:52,809|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 11:46:52,812|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:46:53,816|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 11:46:53,818|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:46:54,822|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 11:46:54,825|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDCONT=1,"IP","3gnet"
+2016-10-31 11:46:54,872|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDCONT=1,"IP","3gnet"
+OK
+
+2016-10-31 11:46:54,874|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDNS=1,1
+2016-10-31 11:46:55,878|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDNS=1,1
+OK
+
+2016-10-31 11:46:55,880|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDATACHANNEL=1,1,"/USBCDC/0","/USBHS/NCM/0",2,1
+2016-10-31 11:46:56,883|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDATACHANNEL=1,1,"/USBCDC/0","/USBHS/NCM/0",2,1
+OK
+
+2016-10-31 11:46:56,886|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=0
+2016-10-31 11:46:57,889|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=0
+OK
+
+2016-10-31 11:46:57,891|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:46:58,894|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 11:46:58,896|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGACT=0,1
+2016-10-31 11:46:59,900|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGACT=0,1
+OK
+
+2016-10-31 11:46:59,902|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGACT=1,1
+2016-10-31 11:47:00,960|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: 
+OK
+
+2016-10-31 11:47:00,962|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDCONT?
+2016-10-31 11:47:01,966|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDCONT?
++CGDCONT: 1,"IP","3gnet.MNC001.MCC460.GPRS","10.27.250.206",0,0,0,0,0,0
+
+OK
+
+2016-10-31 11:47:01,968|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDNS?
+2016-10-31 11:47:02,972|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDNS?
++XDNS: 1, "123.123.123.123", "123.123.123.124"
+
+OK
+
+2016-10-31 11:47:02,974|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDATA="M-RAW_IP",1
+2016-10-31 11:47:03,978|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDATA="M-RAW_IP",1
+OK
+
+
+CONNECT
+
+
+2016-10-31 11:47:03,983|DEBUG|Log.py[line:12]|wwp0s17u1i12
+2016-10-31 11:47:03,985|DEBUG|Log.py[line:12]|wwp0s17u1i10
+2016-10-31 11:47:03,987|DEBUG|Log.py[line:12]|usb0
+2016-10-31 11:47:03,988|DEBUG|Log.py[line:12]|lo
+2016-10-31 11:47:03,990|DEBUG|Log.py[line:12]|wlan0
+2016-10-31 11:47:03,992|DEBUG|Log.py[line:12]|wwp0s17u1i8
+2016-10-31 11:47:03,993|DEBUG|Log.py[line:12]|sit0
+2016-10-31 11:47:03,995|DEBUG|Log.py[line:12]|wwp0s17u1i6
+2016-10-31 11:47:03,997|DEBUG|Log.py[line:12]|interface name: wwp0s17u1i6
+2016-10-31 11:47:04,138|DEBUG|Log.py[line:12]|ifconfig configuration list:
+2016-10-31 11:47:04,163|DEBUG|Log.py[line:12]|route table:
+2016-10-31 11:47:04,573|DEBUG|Log.py[line:12]|DNS configuration:
+2016-10-31 11:47:33,693|DEBUG|Log.py[line:12]|30
+2016-10-31 11:47:33,736|DEBUG|Log.py[line:12]|status=0,percentage=100%
+2016-10-31 11:50:57,206|DEBUG|Log.py[line:12]|start call
+2016-10-31 11:50:57,220|DEBUG|Log.py[line:12]|Connecting to /dev/ttyACM0...
+2016-10-31 11:50:57,226|DEBUG|Log.py[line:12]|Opened port: /dev/ttyACM0
+2016-10-31 11:50:57,229|DEBUG|Log.py[line:12]|entering start wireshark trace
+2016-10-31 11:50:57,230|DEBUG|Log.py[line:12]|start new thread for capturing wireshark trace
+2016-10-31 11:51:02,243|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=2
+2016-10-31 11:51:03,303|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: 
+NO CARRIER
+
+OK
+
+2016-10-31 11:51:03,306|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XACT=3,1
+2016-10-31 11:51:04,308|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XACT=3,1
+OK
+
+2016-10-31 11:51:04,311|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=0
+2016-10-31 11:51:05,315|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=0
+OK
+
+2016-10-31 11:51:05,317|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:51:06,321|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 2
+
+OK
+
+2016-10-31 11:51:06,323|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: ATD+8613121549945;
+2016-10-31 11:51:07,327|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: ATD+8613121549945;
+OK
+
+2016-10-31 11:51:34,154|DEBUG|Log.py[line:12]|start call
+2016-10-31 11:51:34,169|DEBUG|Log.py[line:12]|Connecting to /dev/ttyACM0...
+2016-10-31 11:51:34,173|DEBUG|Log.py[line:12]|Opened port: /dev/ttyACM0
+2016-10-31 11:51:34,176|DEBUG|Log.py[line:12]|entering start wireshark trace
+2016-10-31 11:51:34,177|DEBUG|Log.py[line:12]|start new thread for capturing wireshark trace
+2016-10-31 11:51:39,190|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=2
+2016-10-31 11:51:42,198|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: 
+OK
+
+2016-10-31 11:51:42,200|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XACT=3,1
+2016-10-31 11:51:43,204|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XACT=3,1
+OK
+
+2016-10-31 11:51:43,207|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=0
+2016-10-31 11:51:44,210|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=0
+OK
+
+2016-10-31 11:51:44,212|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:51:44,260|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 2
+
+OK
+
+2016-10-31 11:51:44,263|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: ATD+8613121549945;
+2016-10-31 11:51:45,266|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: ATD+8613121549945;
+OK
+
+2016-10-31 11:51:48,271|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:51:49,275|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,2,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:51:49,277|DEBUG|Log.py[line:12]|return: 2
+2016-10-31 11:51:49,331|DEBUG|Log.py[line:12]|call not pick up, check again after 5 seconds
+2016-10-31 11:51:52,337|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:51:53,340|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,3,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:51:53,342|DEBUG|Log.py[line:12]|return: 3
+2016-10-31 11:51:53,344|DEBUG|Log.py[line:12]|call not pick up, check again after 5 seconds
+2016-10-31 11:51:56,347|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:51:57,350|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,3,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:51:57,352|DEBUG|Log.py[line:12]|return: 3
+2016-10-31 11:51:57,354|DEBUG|Log.py[line:12]|call not pick up, check again after 5 seconds
+2016-10-31 11:52:00,359|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:52:01,363|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,3,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:52:01,366|DEBUG|Log.py[line:12]|return: 3
+2016-10-31 11:52:01,418|DEBUG|Log.py[line:12]|call not pick up, check again after 5 seconds
+2016-10-31 11:52:04,424|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:52:05,428|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:52:05,430|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:52:05,432|INFO|Log.py[line:15]|calling...
+2016-10-31 11:52:05,434|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:52:06,438|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:52:06,440|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:52:11,491|INFO|Log.py[line:15]|calling...
+2016-10-31 11:52:11,493|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:52:11,540|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:52:11,541|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:52:16,549|INFO|Log.py[line:15]|calling...
+2016-10-31 11:52:16,551|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:52:16,602|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:52:16,605|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:52:21,611|INFO|Log.py[line:15]|calling...
+2016-10-31 11:52:21,613|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:52:21,659|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:52:21,660|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:52:26,663|INFO|Log.py[line:15]|calling...
+2016-10-31 11:52:26,665|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:52:26,719|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:52:26,720|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:52:31,727|INFO|Log.py[line:15]|calling...
+2016-10-31 11:52:31,729|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:52:31,780|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:52:31,782|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:52:36,789|INFO|Log.py[line:15]|calling...
+2016-10-31 11:52:36,826|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:52:37,830|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:52:37,831|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:52:42,838|INFO|Log.py[line:15]|calling...
+2016-10-31 11:52:42,841|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:52:43,844|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:52:43,846|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:52:48,853|INFO|Log.py[line:15]|calling...
+2016-10-31 11:52:48,856|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:52:48,859|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:52:48,861|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:52:53,865|INFO|Log.py[line:15]|calling...
+2016-10-31 11:52:53,867|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:52:53,924|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:52:53,926|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:52:58,934|INFO|Log.py[line:15]|calling...
+2016-10-31 11:52:58,936|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:52:58,995|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:52:58,998|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:53:04,005|INFO|Log.py[line:15]|calling...
+2016-10-31 11:53:04,007|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:53:04,061|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:53:04,064|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:53:09,071|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: ATH
+2016-10-31 11:53:10,075|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: ATH
+OK
+
+NO CARRIER
+
+2016-10-31 11:53:10,077|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:53:11,081|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
+OK
+
+2016-10-31 11:53:45,417|DEBUG|Log.py[line:12]|start call
+2016-10-31 11:53:45,433|DEBUG|Log.py[line:12]|Connecting to /dev/ttyACM0...
+2016-10-31 11:53:45,440|DEBUG|Log.py[line:12]|Opened port: /dev/ttyACM0
+2016-10-31 11:53:45,443|DEBUG|Log.py[line:12]|entering start wireshark trace
+2016-10-31 11:53:45,445|DEBUG|Log.py[line:12]|start new thread for capturing wireshark trace
+2016-10-31 11:53:50,458|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=2
+2016-10-31 11:53:52,464|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: 
+OK
+
+2016-10-31 11:53:52,467|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XACT=3,1
+2016-10-31 11:53:53,470|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XACT=3,1
+OK
+
+2016-10-31 11:53:53,473|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=0
+2016-10-31 11:53:54,476|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=0
+OK
+
+2016-10-31 11:53:54,478|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:53:55,482|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 2
+
+OK
+
+2016-10-31 11:53:55,484|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: ATD+8613121549945;
+2016-10-31 11:53:55,533|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: ATD+8613121549945;
+OK
+
+2016-10-31 11:53:58,536|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:53:59,539|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,2,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:53:59,541|DEBUG|Log.py[line:12]|return: 2
+2016-10-31 11:53:59,543|DEBUG|Log.py[line:12]|call not pick up, check again after 5 seconds
+2016-10-31 11:54:02,546|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:54:03,549|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,2,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:54:03,550|DEBUG|Log.py[line:12]|return: 2
+2016-10-31 11:54:03,552|DEBUG|Log.py[line:12]|call not pick up, check again after 5 seconds
+2016-10-31 11:54:06,557|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:54:07,561|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,3,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:54:07,563|DEBUG|Log.py[line:12]|return: 3
+2016-10-31 11:54:07,611|DEBUG|Log.py[line:12]|call not pick up, check again after 5 seconds
+2016-10-31 11:54:10,616|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:54:11,619|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,3,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:54:11,622|DEBUG|Log.py[line:12]|return: 3
+2016-10-31 11:54:11,623|DEBUG|Log.py[line:12]|call not pick up, check again after 5 seconds
+2016-10-31 11:54:14,626|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:54:15,630|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,3,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:54:15,631|DEBUG|Log.py[line:12]|return: 3
+2016-10-31 11:54:15,633|DEBUG|Log.py[line:12]|call not pick up, check again after 5 seconds
+2016-10-31 11:54:18,638|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:54:19,642|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:54:19,644|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:54:19,689|INFO|Log.py[line:15]|calling...
+2016-10-31 11:54:19,691|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:54:20,695|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:54:20,697|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:54:25,704|INFO|Log.py[line:15]|calling...
+2016-10-31 11:54:25,706|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:54:26,710|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:54:26,712|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:54:31,717|INFO|Log.py[line:15]|calling...
+2016-10-31 11:54:31,719|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:54:32,723|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:54:32,725|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:54:37,732|INFO|Log.py[line:15]|calling...
+2016-10-31 11:54:37,734|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:54:38,738|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:54:38,740|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:54:43,745|INFO|Log.py[line:15]|calling...
+2016-10-31 11:54:43,789|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:54:44,793|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:54:44,795|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:54:49,802|INFO|Log.py[line:15]|calling...
+2016-10-31 11:54:49,804|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:54:50,808|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+NO CARRIER
+
+2016-10-31 11:54:50,810|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:54:55,817|INFO|Log.py[line:15]|calling...
+2016-10-31 11:54:55,820|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:54:56,823|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
+OK
+
+2016-10-31 11:55:01,831|INFO|Log.py[line:15]|calling...
+2016-10-31 11:55:01,833|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:55:02,837|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
+OK
+
+2016-10-31 11:55:07,845|INFO|Log.py[line:15]|calling...
+2016-10-31 11:55:07,847|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:55:08,851|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
+OK
+
+2016-10-31 11:55:13,858|INFO|Log.py[line:15]|calling...
+2016-10-31 11:55:13,860|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:55:14,864|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
+OK
+
+2016-10-31 11:55:19,872|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: ATH
+2016-10-31 11:55:20,876|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: ATH
+OK
+
+2016-10-31 11:55:20,878|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:55:21,882|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
+OK
+
+2016-10-31 11:55:34,884|DEBUG|Log.py[line:12]|start call
+2016-10-31 11:55:34,899|DEBUG|Log.py[line:12]|Connecting to /dev/ttyACM0...
+2016-10-31 11:55:34,904|DEBUG|Log.py[line:12]|Opened port: /dev/ttyACM0
+2016-10-31 11:55:34,908|DEBUG|Log.py[line:12]|entering start wireshark trace
+2016-10-31 11:55:34,909|DEBUG|Log.py[line:12]|start new thread for capturing wireshark trace
+2016-10-31 11:55:39,916|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=2
+2016-10-31 11:55:41,922|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: 
+OK
+
+2016-10-31 11:55:41,925|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XACT=3,1
+2016-10-31 11:55:42,929|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XACT=3,1
+OK
+
+2016-10-31 11:55:42,931|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=0
+2016-10-31 11:55:43,935|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=0
+OK
+
+2016-10-31 11:55:43,937|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:55:44,941|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 2
+
+OK
+
+2016-10-31 11:55:44,943|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: ATD+8613121549945;
+2016-10-31 11:55:45,946|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: ATD+8613121549945;
+OK
+
+2016-10-31 11:55:48,952|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:55:49,956|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,2,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:55:49,958|DEBUG|Log.py[line:12]|return: 2
+2016-10-31 11:55:49,959|DEBUG|Log.py[line:12]|call not pick up, check again after 5 seconds
+2016-10-31 11:55:52,965|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:55:53,968|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,3,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:55:53,970|DEBUG|Log.py[line:12]|return: 3
+2016-10-31 11:55:54,028|DEBUG|Log.py[line:12]|call not pick up, check again after 5 seconds
+2016-10-31 11:55:57,034|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:55:58,037|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:55:58,039|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:55:58,041|INFO|Log.py[line:15]|calling...
+2016-10-31 11:55:58,042|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:55:59,046|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:55:59,048|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:56:04,105|INFO|Log.py[line:15]|calling...
+2016-10-31 11:56:04,107|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:56:04,168|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:56:04,170|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:56:09,177|INFO|Log.py[line:15]|calling...
+2016-10-31 11:56:09,179|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:56:09,238|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:56:09,241|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:56:14,248|INFO|Log.py[line:15]|calling...
+2016-10-31 11:56:14,250|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:56:14,308|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:56:14,310|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:56:19,317|INFO|Log.py[line:15]|calling...
+2016-10-31 11:56:19,319|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:56:19,372|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:56:19,374|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:56:24,381|INFO|Log.py[line:15]|calling...
+2016-10-31 11:56:24,383|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CLCC
+2016-10-31 11:56:24,428|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CLCC
++CLCC: 1,0,0,0,0,"8613121549945",145
+
+OK
+
+2016-10-31 11:56:24,431|DEBUG|Log.py[line:12]|return: 0
+2016-10-31 11:57:04,936|DEBUG|Log.py[line:12]|Connecting to /dev/ttyACM0...
+2016-10-31 11:57:04,943|DEBUG|Log.py[line:12]|Opened port: /dev/ttyACM0
+2016-10-31 11:57:04,945|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=2
+2016-10-31 11:57:06,952|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: 
+OK
+
+2016-10-31 11:57:06,954|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XACT=6,2,1
+2016-10-31 11:57:07,958|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XACT=6,2,1
+OK
+
+2016-10-31 11:57:07,960|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=0
+2016-10-31 11:57:08,964|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=0
+OK
+
+2016-10-31 11:57:08,966|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 11:57:09,970|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 11:57:09,972|DEBUG|Log.py[line:12]|delete all messages
+2016-10-31 11:57:10,024|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CMGD=1,4
+2016-10-31 11:57:16,036|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: 
+OK
+
+2016-10-31 11:57:16,038|DEBUG|Log.py[line:12]|set SMS message format to TEXT
+2016-10-31 11:57:16,040|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CMGF=1
+2016-10-31 11:57:17,043|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CMGF=1
+OK
+
+2016-10-31 11:57:17,046|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CPMS="SM","SM","SM"
+2016-10-31 11:57:20,054|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: 
++CPMS: 0,50,0,50,0,50
+
+OK
+
+2016-10-31 11:57:20,056|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CNMI=1,0,0,1,0
+2016-10-31 11:57:20,058|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CNMI=1,0,0,1,0
+OK
+
+2016-10-31 11:57:20,060|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CSMP=17,167,0,0
+2016-10-31 11:57:21,064|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: 
+OK
+
+2016-10-31 11:57:21,067|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CMGL="ALL"
+2016-10-31 11:57:24,128|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: 
+OK
+
+2016-10-31 11:57:24,130|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CMGD=1,4
+2016-10-31 11:57:30,142|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: 
+OK
+
+2016-10-31 11:57:30,144|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CPMS?
+2016-10-31 11:57:33,152|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: 
++CPMS: "SM",0,50,"SM",0,50,"SM",0,50
+
+OK
+
+2016-10-31 11:57:33,154|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CMGW="+8613121549945"
+
+2016-10-31 11:57:34,158|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CMGW="+8613121549945"
+> 
+2016-10-31 11:57:34,160|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: TEST123
+2016-10-31 11:57:35,164|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: TEST123
++CMGW: 1
+
+OK
+
+2016-10-31 11:57:35,166|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CMGR=1
+2016-10-31 11:57:35,229|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CMGR=1
++CMGR: "STO UNSENT","+8613121549945"
+TEST123
+
+
+OK
+
+2016-10-31 11:57:35,231|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CMSS=1
+2016-10-31 11:57:37,236|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: 
++CMSS: 4
+
+OK
+
+2016-10-31 11:57:37,238|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CMEE=2
+2016-10-31 11:57:38,242|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CMEE=2
+OK
+
+2016-10-31 11:57:38,244|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CMEE?
+2016-10-31 11:57:39,248|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CMEE?
++CMEE: 2
+
+OK
+
+2016-10-31 12:02:25,420|DEBUG|Log.py[line:12]|Connecting to /dev/ttyACM0...
+2016-10-31 12:02:25,426|DEBUG|Log.py[line:12]|Opened port: /dev/ttyACM0
+2016-10-31 12:02:25,428|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=2
+2016-10-31 12:02:26,433|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=2
+OK
+
+2016-10-31 12:02:26,436|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XACT=6,2,1
+2016-10-31 12:02:27,440|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XACT=6,2,1
+OK
+
+2016-10-31 12:02:27,442|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=0
+2016-10-31 12:02:28,446|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=0
+OK
+
+2016-10-31 12:02:28,448|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 12:02:29,452|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 12:02:29,454|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 12:02:30,458|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 12:02:30,461|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 12:02:30,510|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 12:02:30,513|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDCONT=1,"IP","3gnet"
+2016-10-31 12:02:31,515|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDCONT=1,"IP","3gnet"
+OK
+
+2016-10-31 12:02:31,518|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDNS=1,1
+2016-10-31 12:02:32,521|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDNS=1,1
+OK
+
+2016-10-31 12:02:32,524|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDATACHANNEL=1,1,"/USBCDC/0","/USBHS/NCM/0",2,1
+2016-10-31 12:02:33,527|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDATACHANNEL=1,1,"/USBCDC/0","/USBHS/NCM/0",2,1
+OK
+
+2016-10-31 12:02:33,529|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=0
+2016-10-31 12:02:34,533|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=0
+OK
+
+2016-10-31 12:02:34,535|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 12:02:35,538|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 12:02:35,541|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGACT=0,1
+2016-10-31 12:02:36,593|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: 
+OK
+
+2016-10-31 12:02:36,595|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGACT=1,1
+2016-10-31 12:02:37,599|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGACT=1,1
+OK
+
+2016-10-31 12:02:37,601|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDCONT?
+2016-10-31 12:02:38,604|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDCONT?
++CGDCONT: 1,"IP","3gnet.MNC001.MCC460.GPRS","10.40.144.129",0,0,0,0,0,0
+
+OK
+
+2016-10-31 12:02:38,607|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDNS?
+2016-10-31 12:02:39,610|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDNS?
++XDNS: 1, "123.123.123.123", "123.123.123.124"
+
+OK
+
+2016-10-31 12:02:39,613|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDATA="M-RAW_IP",1
+2016-10-31 12:02:40,618|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDATA="M-RAW_IP",1
+OK
+
+
+CONNECT
+
+
+2016-10-31 12:02:40,623|DEBUG|Log.py[line:12]|wwp0s17u1i12
+2016-10-31 12:02:40,670|DEBUG|Log.py[line:12]|wwp0s17u1i10
+2016-10-31 12:02:40,672|DEBUG|Log.py[line:12]|usb0
+2016-10-31 12:02:40,673|DEBUG|Log.py[line:12]|lo
+2016-10-31 12:02:40,675|DEBUG|Log.py[line:12]|wlan0
+2016-10-31 12:02:40,677|DEBUG|Log.py[line:12]|wwp0s17u1i8
+2016-10-31 12:02:40,678|DEBUG|Log.py[line:12]|sit0
+2016-10-31 12:02:40,680|DEBUG|Log.py[line:12]|wwp0s17u1i6
+2016-10-31 12:02:40,682|DEBUG|Log.py[line:12]|interface name: wwp0s17u1i6
+2016-10-31 12:02:40,790|DEBUG|Log.py[line:12]|ifconfig configuration list:
+2016-10-31 12:02:40,815|DEBUG|Log.py[line:12]|route table:
+2016-10-31 12:02:41,342|DEBUG|Log.py[line:12]|DNS configuration:
+2016-10-31 12:02:41,360|DEBUG|Log.py[line:12]|entering start wireshark trace
+2016-10-31 12:02:41,360|DEBUG|Log.py[line:12]|start new thread for capturing wireshark trace
+2016-10-31 12:02:41,484|DEBUG|Log.py[line:12]|iperf3 -c 54.223.54.250 -u -p 5224 -b 2M -i 1 -t 10 -l 1400 -R
+2016-10-31 12:03:40,128|DEBUG|Log.py[line:12]|Connecting to /dev/ttyACM0...
+2016-10-31 12:03:40,133|DEBUG|Log.py[line:12]|Opened port: /dev/ttyACM0
+2016-10-31 12:03:40,135|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=2
+2016-10-31 12:03:41,139|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=2
+NO CARRIER
+
+OK
+
+2016-10-31 12:03:41,142|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XACT=6,2,1
+2016-10-31 12:03:42,146|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XACT=6,2,1
+OK
+
+2016-10-31 12:03:42,148|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=0
+2016-10-31 12:03:43,151|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=0
+OK
+
+2016-10-31 12:03:43,153|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 12:03:44,156|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 12:03:44,158|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 12:03:45,162|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 12:03:45,164|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 12:03:45,228|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 12:03:45,231|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDCONT=1,"IP","3gnet"
+2016-10-31 12:03:46,235|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDCONT=1,"IP","3gnet"
+OK
+
+2016-10-31 12:03:46,237|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDNS=1,1
+2016-10-31 12:03:47,241|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDNS=1,1
+OK
+
+2016-10-31 12:03:47,243|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDATACHANNEL=1,1,"/USBCDC/0","/USBHS/NCM/0",2,1
+2016-10-31 12:03:48,247|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDATACHANNEL=1,1,"/USBCDC/0","/USBHS/NCM/0",2,1
+OK
+
+2016-10-31 12:03:48,249|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=0
+2016-10-31 12:03:49,253|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=0
+OK
+
+2016-10-31 12:03:49,255|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 12:03:50,259|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 12:03:50,261|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGACT=0,1
+2016-10-31 12:03:51,310|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: 
+OK
+
+2016-10-31 12:03:51,313|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGACT=1,1
+2016-10-31 12:03:52,316|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGACT=1,1
+OK
+
+2016-10-31 12:03:52,318|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDCONT?
+2016-10-31 12:03:53,321|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDCONT?
++CGDCONT: 1,"IP","3gnet.MNC001.MCC460.GPRS","10.41.190.178",0,0,0,0,0,0
+
+OK
+
+2016-10-31 12:03:53,324|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDNS?
+2016-10-31 12:03:54,328|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDNS?
++XDNS: 1, "123.123.123.123", "123.123.123.124"
+
+OK
+
+2016-10-31 12:03:54,330|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDATA="M-RAW_IP",1
+2016-10-31 12:03:55,335|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDATA="M-RAW_IP",1
+OK
+
+
+CONNECT
+
+
+2016-10-31 12:03:55,340|DEBUG|Log.py[line:12]|wwp0s17u1i12
+2016-10-31 12:03:55,398|DEBUG|Log.py[line:12]|wwp0s17u1i10
+2016-10-31 12:03:55,400|DEBUG|Log.py[line:12]|usb0
+2016-10-31 12:03:55,401|DEBUG|Log.py[line:12]|lo
+2016-10-31 12:03:55,403|DEBUG|Log.py[line:12]|wlan0
+2016-10-31 12:03:55,404|DEBUG|Log.py[line:12]|wwp0s17u1i8
+2016-10-31 12:03:55,406|DEBUG|Log.py[line:12]|sit0
+2016-10-31 12:03:55,408|DEBUG|Log.py[line:12]|wwp0s17u1i6
+2016-10-31 12:03:55,409|DEBUG|Log.py[line:12]|interface name: wwp0s17u1i6
+2016-10-31 12:03:55,537|DEBUG|Log.py[line:12]|ifconfig configuration list:
+2016-10-31 12:03:55,562|DEBUG|Log.py[line:12]|route table:
+2016-10-31 12:03:55,981|DEBUG|Log.py[line:12]|DNS configuration:
+2016-10-31 12:03:55,999|DEBUG|Log.py[line:12]|entering start wireshark trace
+2016-10-31 12:03:55,999|DEBUG|Log.py[line:12]|start new thread for capturing wireshark trace
+2016-10-31 12:03:56,123|DEBUG|Log.py[line:12]|iperf3 -c 54.223.54.250 -u -p 5224 -b 2M -i 1 -t 10 -l 1400 --get-server-output
+2016-10-31 12:04:45,899|DEBUG|Log.py[line:12]|Connecting to /dev/ttyACM0...
+2016-10-31 12:04:45,903|DEBUG|Log.py[line:12]|Opened port: /dev/ttyACM0
+2016-10-31 12:04:45,906|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=2
+2016-10-31 12:04:46,910|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=2
+NO CARRIER
+
+OK
+
+2016-10-31 12:04:46,913|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XACT=6,2,1
+2016-10-31 12:04:47,917|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XACT=6,2,1
+OK
+
+2016-10-31 12:04:47,919|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=0
+2016-10-31 12:04:48,923|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=0
+OK
+
+2016-10-31 12:04:48,925|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 12:04:49,929|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 12:04:49,931|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 12:04:50,935|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 12:04:50,937|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 12:04:51,941|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 12:04:51,943|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDCONT=1,"IP","3gnet"
+2016-10-31 12:04:52,947|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDCONT=1,"IP","3gnet"
+OK
+
+2016-10-31 12:04:52,949|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDNS=1,1
+2016-10-31 12:04:52,999|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDNS=1,1
+OK
+
+2016-10-31 12:04:53,001|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDATACHANNEL=1,1,"/USBCDC/0","/USBHS/NCM/0",2,1
+2016-10-31 12:04:54,005|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDATACHANNEL=1,1,"/USBCDC/0","/USBHS/NCM/0",2,1
+OK
+
+2016-10-31 12:04:54,008|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=0
+2016-10-31 12:04:55,011|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=0
+OK
+
+2016-10-31 12:04:55,014|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 12:04:56,017|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 12:04:56,020|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGACT=0,1
+2016-10-31 12:04:57,023|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGACT=0,1
+OK
+
+2016-10-31 12:04:57,025|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGACT=1,1
+2016-10-31 12:04:58,029|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGACT=1,1
+OK
+
+2016-10-31 12:04:58,031|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDCONT?
+2016-10-31 12:04:58,080|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDCONT?
++CGDCONT: 1,"IP","3gnet.MNC001.MCC460.GPRS","10.47.44.226",0,0,0,0,0,0
+
+OK
+
+2016-10-31 12:04:58,082|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDNS?
+2016-10-31 12:04:58,084|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDNS?
++XDNS: 1, "123.123.123.123", "123.123.123.124"
+
+OK
+
+2016-10-31 12:04:58,087|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDATA="M-RAW_IP",1
+2016-10-31 12:04:59,092|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDATA="M-RAW_IP",1
+OK
+
+
+CONNECT
+
+
+2016-10-31 12:04:59,097|DEBUG|Log.py[line:12]|wwp0s17u1i12
+2016-10-31 12:04:59,098|DEBUG|Log.py[line:12]|wwp0s17u1i10
+2016-10-31 12:04:59,100|DEBUG|Log.py[line:12]|usb0
+2016-10-31 12:04:59,102|DEBUG|Log.py[line:12]|lo
+2016-10-31 12:04:59,103|DEBUG|Log.py[line:12]|wlan0
+2016-10-31 12:04:59,105|DEBUG|Log.py[line:12]|wwp0s17u1i8
+2016-10-31 12:04:59,106|DEBUG|Log.py[line:12]|sit0
+2016-10-31 12:04:59,108|DEBUG|Log.py[line:12]|wwp0s17u1i6
+2016-10-31 12:04:59,110|DEBUG|Log.py[line:12]|interface name: wwp0s17u1i6
+2016-10-31 12:04:59,232|DEBUG|Log.py[line:12]|ifconfig configuration list:
+2016-10-31 12:04:59,256|DEBUG|Log.py[line:12]|route table:
+2016-10-31 12:04:59,661|DEBUG|Log.py[line:12]|DNS configuration:
+2016-10-31 12:04:59,678|DEBUG|Log.py[line:12]|entering start wireshark trace
+2016-10-31 12:04:59,679|DEBUG|Log.py[line:12]|start new thread for capturing wireshark trace
+2016-10-31 12:04:59,804|DEBUG|Log.py[line:12]|iperf3 -c 54.223.54.250 -u -p 5224 -b 2M -i 1 -t 10 -l 1400 --get-server-output
+2016-10-31 12:06:46,059|DEBUG|Log.py[line:12]|Connecting to /dev/ttyACM0...
+2016-10-31 12:06:46,066|DEBUG|Log.py[line:12]|Opened port: /dev/ttyACM0
+2016-10-31 12:06:46,068|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=2
+2016-10-31 12:06:47,073|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=2
+NO CARRIER
+
+OK
+
+2016-10-31 12:06:47,076|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XACT=6,2,1
+2016-10-31 12:06:48,079|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XACT=6,2,1
+OK
+
+2016-10-31 12:06:48,081|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=0
+2016-10-31 12:06:49,085|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=0
+OK
+
+2016-10-31 12:06:49,088|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 12:06:50,091|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 12:06:50,094|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 12:06:51,097|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 12:06:51,099|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 12:06:51,157|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 12:06:51,159|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDCONT=1,"IP","3gnet"
+2016-10-31 12:06:52,163|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDCONT=1,"IP","3gnet"
+OK
+
+2016-10-31 12:06:52,165|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDNS=1,1
+2016-10-31 12:06:53,169|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDNS=1,1
+OK
+
+2016-10-31 12:06:53,171|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDATACHANNEL=1,1,"/USBCDC/0","/USBHS/NCM/0",2,1
+2016-10-31 12:06:54,175|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDATACHANNEL=1,1,"/USBCDC/0","/USBHS/NCM/0",2,1
+OK
+
+2016-10-31 12:06:54,177|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS=0
+2016-10-31 12:06:55,181|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS=0
+OK
+
+2016-10-31 12:06:55,183|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+COPS?
+2016-10-31 12:06:56,187|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+COPS?
++COPS: 0,0,"CHN-UNICOM",7
+
+OK
+
+2016-10-31 12:06:56,189|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGACT=0,1
+2016-10-31 12:06:57,250|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: 
+OK
+
+2016-10-31 12:06:57,252|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGACT=1,1
+2016-10-31 12:06:58,256|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGACT=1,1
+OK
+
+2016-10-31 12:06:58,258|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDCONT?
+2016-10-31 12:06:59,261|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDCONT?
++CGDCONT: 1,"IP","3gnet.MNC001.MCC460.GPRS","10.54.206.102",0,0,0,0,0,0
+
+OK
+
+2016-10-31 12:06:59,264|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+XDNS?
+2016-10-31 12:07:00,268|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+XDNS?
++XDNS: 1, "123.123.123.123", "123.123.123.124"
+
+OK
+
+2016-10-31 12:07:00,270|DEBUG|Log.py[line:12]|Writing to /dev/ttyACM0: AT+CGDATA="M-RAW_IP",1
+2016-10-31 12:07:01,275|DEBUG|Log.py[line:12]|Response from /dev/ttyACM0: AT+CGDATA="M-RAW_IP",1
+OK
+
+
+CONNECT
+
+
+2016-10-31 12:07:01,280|DEBUG|Log.py[line:12]|wwp0s17u1i12
+2016-10-31 12:07:01,348|DEBUG|Log.py[line:12]|wwp0s17u1i10
+2016-10-31 12:07:01,349|DEBUG|Log.py[line:12]|usb0
+2016-10-31 12:07:01,351|DEBUG|Log.py[line:12]|lo
+2016-10-31 12:07:01,352|DEBUG|Log.py[line:12]|wlan0
+2016-10-31 12:07:01,354|DEBUG|Log.py[line:12]|wwp0s17u1i8
+2016-10-31 12:07:01,355|DEBUG|Log.py[line:12]|sit0
+2016-10-31 12:07:01,357|DEBUG|Log.py[line:12]|wwp0s17u1i6
+2016-10-31 12:07:01,359|DEBUG|Log.py[line:12]|interface name: wwp0s17u1i6
+2016-10-31 12:07:01,477|DEBUG|Log.py[line:12]|ifconfig configuration list:
+2016-10-31 12:07:01,502|DEBUG|Log.py[line:12]|route table:
+2016-10-31 12:07:02,053|DEBUG|Log.py[line:12]|DNS configuration:
+2016-10-31 12:07:02,070|DEBUG|Log.py[line:12]|entering start wireshark trace
+2016-10-31 12:07:02,072|DEBUG|Log.py[line:12]|start new thread for capturing wireshark trace
+2016-10-31 12:07:02,233|DEBUG|Log.py[line:12]|iperf3 -c 54.223.54.250 -u -p 5224 -b 2M -i 1 -t 10 -l 1400 -R

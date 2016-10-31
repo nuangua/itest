@@ -5,15 +5,10 @@ import commands
 import serial
 import re
 import time
-import logging
-import logging.config
 import Log
 import psutil
 import sys
-
-LOG_CFG_PATH="../config/logging.conf"
-logging.config.fileConfig(LOG_CFG_PATH)
-logger = logging.getLogger("itest")
+import Generic as gen
 
 #serial port config
 usbdevice = None
@@ -46,18 +41,18 @@ def openSerialPort(_port):
         if devicelist[0] == '/':
             device = devicelist
     if not device:
-        logger.debug("Waiting for device...")
+        Log.debug("Waiting for device...")
         return False
-    logger.debug("Connecting to " + device + "...")
+    Log.debug("Connecting to " + device + "...")
     serialport = serial.Serial(device, baud, timeout=0, stopbits=serial.STOPBITS_TWO)
-    logger.debug('Opened port: ' + serialport.portstr)
+    Log.debug('Opened port: ' + serialport.portstr)
     return True
 
 #Close serial port
 def closeSerialPort():
     global serialPort
     if serialport and serialport.isOpen():
-        logger.debug("Closing: " + serialport.portstr)
+        Log.debug("Closing: " + serialport.portstr)
         serialport.close()
 
 #send at command and wait the response in waitting time
@@ -66,11 +61,11 @@ def waitAT(_atCommand, _response, _waitTime):
     matched = None
     output = None
     if serialport == None:
-        logger.debug("Serial port is not available. Please check serial port.")
+        Log.debug("Serial port is not available. Please check serial port.")
         return None, False
     else:
         serialport.write(_atCommand + '\r')
-    logger.debug('Writing to '+serialport.portstr+': '+_atCommand)
+    Log.debug('Writing to '+serialport.portstr+': '+_atCommand)
     startTime = time.time()
     endTime = time.time()
     while (endTime - startTime) <= _waitTime:
@@ -81,10 +76,10 @@ def waitAT(_atCommand, _response, _waitTime):
             time.sleep(1)
             endTime = time.time()
     if output == None:
-        logger.debug('Timeout...')
+        Log.debug('Timeout...')
         return output, False
     matched = re.search(_response, output)
-    logger.debug('Response from '+serialport.portstr+': '+output)
+    Log.debug('Response from '+serialport.portstr+': '+output)
     if matched != None:
         return output, True
     else:
@@ -110,10 +105,10 @@ def attachDev(ratSetting):
     elif "TM_4G" in ratSetting:
         output,ratFlag = waitAT('AT+XACT=6,2,1', 'OK', WAIT_TIME)
     else:
-        logger.debug('The specific rat is error. Please input the correct one, for example, SM_2G/SM_3G/SM_4G/DM_3G/DM_4G/TM_4G.')
+        Log.debug('The specific rat is error. Please input the correct one, for example, SM_2G/SM_3G/SM_4G/DM_3G/DM_4G/TM_4G.')
         return False
     if ratFlag == False:
-        logger.debug("Select rat failed.")
+        Log.debug("Select rat failed.")
         return False
     output, flag = waitAT('AT+COPS=0', 'OK', WAIT_TIME)
     waitAT('AT+COPS?','OK', WAIT_TIME)
@@ -199,11 +194,11 @@ def activatePdpContext():
 
         interfaceName=None
         for item in listNetCards():
-            logger.debug(item)
+            Log.debug(item)
             if 'p0s17u1i6' in item:
                 interfaceName = item
                 break
-        logger.debug('interface name: ' + interfaceName)
+        Log.debug('interface name: ' + interfaceName)
         subprocess.call('ifconfig ' + interfaceName + ' down', shell=True)
         subprocess.call('ifconfig ' + interfaceName + ' ' + ip_addr, shell=True)
         subprocess.call('ifconfig ' + interfaceName + ' up', shell=True)
@@ -212,11 +207,11 @@ def activatePdpContext():
         subprocess.call('echo "nameserver 8.8.8.8" > /etc/resolv.conf',shell=True)
         for nameserver in dnsList:
             subprocess.call('echo "nameserver ' + nameserver + '" >> /etc/resolv.conf', shell=True)
-        logger.debug('ifconfig configuration list:')
+        Log.debug('ifconfig configuration list:')
         subprocess.call('ifconfig', shell=True)
-        logger.debug('route table:')
+        Log.debug('route table:')
         subprocess.call('route', shell=True)
-        logger.debug('DNS configuration:')
+        Log.debug('DNS configuration:')
         subprocess.call('cat /etc/resolv.conf', shell=True)
 
 #list network card names
@@ -229,7 +224,9 @@ def listNetCards():
 
 if __name__ == '__main__':
     openDefaultSerialPort()
+    gen.startWiresharkTraceThread('/home/root/itest/logs/udp.cap')
     detachDev()
     attachDefaultDev()
     activatePdpContext()
-    logger.debug(listNetCards())
+    Log.debug(listNetCards())
+    gen.stopWiresharkTrace()

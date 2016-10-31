@@ -56,7 +56,7 @@ def udpUpload():
 
 if __name__=="__main__":
     #gen.startWiresharkTrace('/home/root/Logs/itest1.cap')
-    gen.threadStartWiresharkTrace('/home/root/Logs/itest2.cap')
+    gen.threadStartWiresharkTrace('/home/root/Logs/itest3.cap')
     udpDownload()
     udpUpload()
     gen.stopWiresharkTrace()

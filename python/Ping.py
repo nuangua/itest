@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 import subprocess
-import Log as log
+import Log
 import ATDevice as ad
 
 ip='54.223.54.250'
@@ -14,7 +14,7 @@ def isAlive(percent):
         print line
         if 'bytes from '+ip in line:
             counter = counter+1
-    log.debug(counter)
+    Log.debug(counter)
     if (counter/5) < percent:
         return False
     else:
@@ -28,7 +28,7 @@ def startPing(_pingTime):
         print line
         if 'bytes from '+ip in line:
             counter = counter +1
-    log.debug(counter)
+    Log.debug(counter)
     return subp.returncode,counter/_pingTime
 
 def stopPing():
@@ -39,10 +39,6 @@ if __name__=="__main__":
     ad.detachDev()
     ad.attachDefaultDev()
     ad.activatePdpContext()
-    #log.debug(isAlive())
-    status,percent = startPing(10)
-    log.debug('status='+str(status)+',percentage='+str(percent*100)+'%')
-    if isAlive(0.8)== True:
-        log.debug('network connection is alive')
-    else:
-        log.debug('network connection is dead')
+    #Log.debug(isAlive())
+    status,percent = startPing(30)
+    Log.debug('status='+str(status)+',percentage='+str(percent*100)+'%')

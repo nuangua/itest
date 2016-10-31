@@ -1,11 +1,20 @@
 #!/usr/bin/python
 
 import subprocess
-import Log as log
+import Log
 import ATDevice as ad
+import Generic as gen
 from ftplib import FTP
+import threading
+import time
+import subprocess
 
 ip='54.223.54.250'
+ITEST_CONFIG='/home/root/itest/config/itest.conf'
+
+dlHandler = None
+upHandler = None
+
 #to test if network connection is alive
 def isAlive(percent):
     counter=0
@@ -15,7 +24,7 @@ def isAlive(percent):
         print line
         if 'bytes from '+ip in line:
             counter = counter+1
-    log.debug(counter)
+    Log.debug(counter)
     if (counter/5) < percent:
         return False
     else:
@@ -26,7 +35,7 @@ def getFtpAccount():
     ftpIp=None
     ftpUsername=None
     ftpPassword=None
-    for line in open('../config/itest.conf','r'):
+    for line in open(ITEST_CONFIG,'r'):
         if 'ftp.ip' in line:
             ftpIp = line.split('=')[1]
             continue
@@ -42,7 +51,7 @@ def getFtpAccount():
 #connect to ftp server
 def ftpConnect():
     ftp_ip,ftp_username,ftp_password = getFtpAccount()
-    log.debug('ftp_ip='+ftp_ip)
+    Log.debug('ftp_ip='+ftp_ip)
     ftp = FTP()
     ftp.set_debuglevel(2)
     ftp.connect(ftp_ip,21)
@@ -52,9 +61,9 @@ def ftpConnect():
 #ftp download
 def ftpDownload():
     ftp = ftpConnect()
-    log.info(ftp.getwelcome())
+    Log.info(ftp.getwelcome())
     remotepath="/download/100_MBytes.txt"
-    localpath="../config/ftp/100_MBytes.txt"
+    localpath="/home/root/itest/config/ftp/100_MBytes.txt"
     bufsize=1024
     fp=open(localpath,'wb')
     ftp.retrbinary('RETR '+remotepath,fp.write,bufsize)
@@ -62,12 +71,20 @@ def ftpDownload():
     fp.close()
     ftp.quit()
 
+def ftpDownloadThread():
+    dlHandler = threading.Thread(target=ftpDownload,args=())
+    dlHandler.setDaemon(True)
+    dlHandler.start()
+
+def ftpDownloadThreadStop():
+    dlHandler.stop()
+
 #ftp upload
 def ftpUpload():
     ftp = ftpConnect()
-    log.info(ftp.getwelcome())
+    Log.info(ftp.getwelcome())
     remotepath="/upload/100_MBytes.txt"
-    localpath="../config/ftp/100_MBytes.txt"
+    localpath="/home/root/itest/config/ftp/100_MBytes.txt"
     bufsize=1024
     fp=open(localpath,'rb')
     ftp.storbinary('STOR '+remotepath,fp,bufsize)
@@ -75,14 +92,35 @@ def ftpUpload():
     fp.close()
     ftp.quit()
 
+def ftpUploadThread():
+    ulHandler = threading.Thread(target=ftpUpload,args=())
+    ulHandler.setDaemon(True)
+    ulHandler.start()
+
+def ftpUploadThreadStop():
+    ulHandler.stop()
+
 if  __name__=="__main__":
     ad.openDefaultSerialPort()
+    gen.startWiresharkTraceThread('/home/root/itest/logs/ftp.cap')
     ad.detachDev()
     ad.attachDev('SM_4G')
     ad.activatePdpContext()
     if isAlive(0.8)== True:
-        log.debug('network connection is alive')
-        #ftpDownload()
-        ftpUpload()
+        Log.debug('network connection is alive')
+        ftpDownloadThread()
+        ftpUploadThread()
     else:
-        log.debug('network connection is dead')
+        Log.debug('network connection is dead')
+    time.sleep(5)
+    startTime = time.time()
+    endTime = time.time()
+    waitTime = 60
+    while (endTime - startTime) <= waitTime:
+        Log.info('ftp downloading and uploading...')
+        time.sleep(5)
+        endTime = time.time()
+    Log.debug('killing ftp thread...')
+    ftpDownloadThreadStop()
+    ftpUploadThreadStop()
+    gen.stopWiresharkTrace()

@@ -55,8 +55,7 @@ def udpUpload():
             print line
 
 if __name__=="__main__":
-    #gen.startWiresharkTrace('/home/root/Logs/itest1.cap')
-    gen.threadStartWiresharkTrace('/home/root/Logs/itest3.cap')
+    gen.startWiresharkTraceThread('/home/root/itest/logs/udp.cap')
     udpDownload()
     udpUpload()
     gen.stopWiresharkTrace()
@@ -66,7 +65,7 @@ if  __name__=="_main__":
     ad.detachDev()
     ad.attachDev('SM_4G')
     ad.activatePdpContext()
-    gen.startWiresharkTrace('/home/root/Logs/itest.cap')
+    gen.startWiresharkTraceThread('/home/root/Logs/itest.cap')
     if isAlive(0.8)== True:
         log.debug('network connection is alive')
         #ftpDownload()

@@ -1,4 +1,4 @@
-#include "Com.h"
+#include "../include/Com.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>

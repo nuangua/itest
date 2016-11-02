@@ -8,7 +8,7 @@
 #include <termios.h>
 #include <string.h>
 
-#include "Com.h"
+#include "../include/usb.h"
 
 #define FALSE	-1
 #define TRUE	0

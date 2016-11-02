@@ -1,13 +1,13 @@
 VPATH=include:src:usb:at:ping:call:sms:ftp:udp:tcp:testcases
+objects=itest.o usb.o at.o call.o
 
-objects=itest.o usb.o at.o
-
+#ft-call:$(objects)
+#	g++ -o ft-call $(objects)
 itest:$(objects)
 	g++ -o itest $(objects)
-
 $(filter %.o,$(objects)): %.o: %.cpp
 	g++ -c $< -o $@
 
 .PHONY:clean
 clean:
-	-rm -f itest *.o
+	-rm -f ft-call itest *.o

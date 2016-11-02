@@ -7,8 +7,9 @@
 
 At::At()
 {
-	char* defaultPort = "/dev/ttyACM0";
-	At(defaultPort);
+	//TODO
+	com.openCom("/dev/ttyACM0");
+	com.setCom(115200, 0, 8, 1, 'N');
 }
 
 At::At(char* port)

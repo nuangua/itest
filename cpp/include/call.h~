@@ -9,7 +9,6 @@ private:
 	char* to;
 public:
 	Call();
-	virtual ~Call();
 	int makeCall(char* simNum);
 	int answerCall();
 	int checkStatus();

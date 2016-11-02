@@ -6,9 +6,9 @@ class At
 {
 public:
 	At();
-	At(char* port);
-	~At();
-	int waitAt(char* atCmd, char* waitStr, int waitTime);
+	At(char port[]);
+	virtual ~At();
+	int waitAt(char atCmd[], char waitStr[], int waitTime);
 private:
 	Com com;
 };

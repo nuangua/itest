@@ -8,15 +8,17 @@
 At::At()
 {
 	//TODO
+	com.openCom("/dev/ttyACM0");
+	com.setCom(115200, 0, 8, 1, 'N');
 }
 
-At::At(char* port)
+At::At(char port[])
 {
 	com.openCom(port);
 	com.setCom(115200, 0, 8, 1, 'N');
 }
 
-int At::waitAt(char* atCmd, char* waitStr, int waitTime)
+int At::waitAt(char atCmd[], char waitStr[], int waitTime)
 {
 	char output[512];
 	com.writeCom(atCmd, sizeof(atCmd));

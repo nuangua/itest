@@ -5,9 +5,9 @@
 class At
 {
 public:
-	virtual At();
-	virtual At(char* port);
-	~At();
+	At();
+	At(char* port);
+	virtual ~At();
 	int waitAt(char* atCmd, char* waitStr, int waitTime);
 private:
 	Com com;

@@ -22,7 +22,7 @@ Com::~Com()
 }
 
 //open com port
-int Com::openCom(char* port)
+int Com::openCom(char port[])
 {
 	serialport = port;
 	fd = open(serialport, O_RDWR|O_NOCTTY|O_NDELAY);

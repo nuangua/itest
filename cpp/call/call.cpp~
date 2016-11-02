@@ -4,7 +4,7 @@
 
 Call::Call()
 {
-	printf("entering call constructor\n");
+	printf("entering call constructor");
 }
 Call::~Call()
 {
@@ -13,7 +13,6 @@ Call::~Call()
 
 int Call::makeCall(char* simNum)
 {
-	at.waitAt("AT+CLCC", "OK", 10);
 	return FALSE;
 }
 

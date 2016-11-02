@@ -9,10 +9,7 @@
 #include <string.h>
 
 #include "../include/usb.h"
-
-#define FALSE	-1
-#define TRUE	0
-
+#include "../include/bool.h"
 /**
  *com port class
  *

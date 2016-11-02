@@ -24,8 +24,7 @@ int main()
   */
 	char port[] = "/dev/ttyACM0";
 	char atCmd[] = "AT\r";
-	char waitStr[] = "OK";
 	At at(port);
-	at.waitAt(atCmd, waitStr, 10);
+	at.waitAt(atCmd, "OK", 10);
 	return 0;
 }

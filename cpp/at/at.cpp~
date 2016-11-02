@@ -7,7 +7,8 @@
 
 At::At()
 {
-	//TODO
+	char* defaultPort = "/dev/ttyACM0";
+	At(defaultPort);
 }
 
 At::At(char* port)

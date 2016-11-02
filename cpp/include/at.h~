@@ -1,0 +1,15 @@
+#ifndef _AT_H_
+#define	_AT_H_
+#include "../include/usb.h"
+
+class At
+{
+public:
+	virtual At();
+	virtual At(char* port);
+	~At();
+	int waitAt(char* atCmd, char* waitStr, int waitTime);
+private:
+	Com com;
+};
+#endif

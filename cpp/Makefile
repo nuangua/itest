@@ -1,6 +1,6 @@
-VPATH=include:src:usb:ping:call:sms:ftp:udp:tcp:testcases
+VPATH=include:src:usb:at:ping:call:sms:ftp:udp:tcp:testcases
 
-objects=itest.o usb.o
+objects=itest.o usb.o at.o
 
 itest:$(objects)
 	g++ -o itest $(objects)

@@ -1,0 +1,7 @@
+1478087762 ERROR sub1 : sub1 error
+1478087762 WARN sub1 : sub1 warn
+1478087772 ERROR sub1.sub2 : sub2 error
+1478087772 ERROR sub1 : sub1 error
+1478087772 WARN sub1 : sub1 warn
+1478087775 ERROR sub1.sub2 : sub2 error
+1478087775 ERROR sub1.sub2 : test vform 123

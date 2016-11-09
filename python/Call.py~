@@ -1,16 +1,15 @@
 #!/usr/bin/python
 
 import time
-import logging
-import logging.config
-import Log as log
+import Log
 import ATDevice as ad
+import Generic as gen
 
 #start MO call
 def startMOCall(_simNo):
     rat = "DM_3G"
     if ad.attachDev(rat)== False:
-        log.debug("attach to "+rat+" failed")
+        Log.debug("attach to "+rat+" failed")
         return False
     output, flag = ad.waitAT('ATD'+_simNo+';','OK',ad.WAIT_TIME)
     return flag
@@ -21,7 +20,7 @@ def checkCallStatus():
     if ',' not in output:
         return -1
     out_list = output.split(',')
-    log.debug('return: '+out_list[2].strip())
+    Log.debug('return: '+out_list[2].strip())
     return out_list[2].strip()
 
 def stopCall():
@@ -30,21 +29,23 @@ def stopCall():
     return flag
 
 if __name__ == "__main__":
-    log.debug("start call")
+    Log.debug("start call")
     ad.openDefaultSerialPort()
+    gen.startWiresharkTraceThread('/home/root/itest/logs/call.cap')
     ad.detachDev()
-    #log.debug(ad.listNetCards())
-    startMOCall('+8613121549945')
+    #Log.debug(ad.listNetCards())
+    startMOCall('+8613466623421')
     time.sleep(5)
     while checkCallStatus() != '0':
-        log.debug('call not pick up, check again after 5 seconds')
+        Log.debug('call not pick up, check again after 5 seconds')
         time.sleep(5)
     startTime = time.time()
     endTime = time.time()
     waitTime = 60
     while (endTime - startTime) <= waitTime:
-        log.info('calling...')
+        Log.info('calling...')
         checkCallStatus()
         time.sleep(5)
         endTime = time.time()
     stopCall()
+    gen.stopWiresharkTrace()

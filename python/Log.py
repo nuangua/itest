@@ -2,7 +2,7 @@ import logging
 import logging.config
 import sys
 
-LOG_CFG_PATH= "/home/root/itest/config/logging.conf"
+LOG_CFG_PATH= "/home/pi/itest/config/logging.conf"
 LOGGER_NAME="itest"
 
 logging.config.fileConfig(LOG_CFG_PATH)

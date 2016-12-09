@@ -12,7 +12,7 @@ import Generic as gen
 
 #serial port config
 usbdevice = None
-baud = 9600
+baud = 115200
 serialport = None
 
 WAIT_SHORT_TIME = 5
@@ -60,6 +60,7 @@ def waitAT(_atCommand, _response, _waitTime):
     global serialport
     matched = None
     output = None
+    #Log.debug('send to port: '+serialport.portstr)
     if serialport == None:
         Log.debug("Serial port is not available. Please check serial port.")
         return None, False
@@ -128,6 +129,64 @@ def isAttached():
             return True
         elif '"CHN-UNICOM"' in output:
             return True
+	else:
+	    #Log.debug("return false!!!")
+	    return False
+
+def getSimNo():
+	output, flag = waitAT('AT+CNUM', 'CNUM:', WAIT_TIME)
+	if flag == False:
+		return "NULL"
+	else:
+		return output.split(',')[1].replace('"','')
+
+def getStatus():
+	output,flag = waitAT('AT+COPS?', 'OK', WAIT_TIME)
+	operator=None
+	rat=None
+	callStatus=None
+	momt=None
+
+	if flag == False:
+		return "NULL"
+	else:
+		if '"CHINA MOBILE"' in output:
+			operator="CMCC"
+		elif '"CHN-UNICOM"' in output:
+			operator="CUC"
+		else:
+			operator="NULL"
+		if '",7' in output:
+			rat="4G"
+		elif '",2' in output:
+			rat="3G"
+		elif '",0' in output:
+			rat="2G"
+		else:
+			rat="NULL"
+	output,flag = waitAT('AT+CLCC','OK',WAIT_TIME)
+	if flag == False:
+		return "OP:"+operator+","+"RAT:"+rat+",Unknown"
+	else:
+		if '+CLCC:' not in output:
+			return "OP:"+operator+","+"RAT:"+rat+","+"STAT:IDLE"
+		else:
+			#return "OP:"+operator+","+"RAT:"+rat+","+"STAT:BUSY"
+			size = len(output.split('"'))
+			if size > 3:
+				momt = "MO"
+			else:
+				momt = "MT"
+			oppositeNo = output.split('"')[1]
+			return "OP:"+operator+","+"RAT:"+rat+","+"STAT:"+momt+"/"+oppositeNo
+
+
+def getSimStatus():
+	statusDict = {}
+	simNo = getSimNo()
+	status = None
+	statusDict[simNo] = getStatus()
+	return statusDict
 
 #send SMS
 def sendSMS(_smsText):
@@ -151,8 +210,11 @@ def sendSMS(_smsText):
     waitAT('AT+CMEE?','OK',WAIT_TIME)
     return flag
 
-#activate pdp context
 def activatePdpContext():
+	activatePdpContextWith('usb0')
+
+#activate pdp context
+def activatePdpContextWith(interfaceName):
     ip_addr = "255.255.255.255"
     dns = None
     apn = None
@@ -170,7 +232,7 @@ def activatePdpContext():
 
         waitAT('AT+COPS=0', 'OK', WAIT_TIME)
         waitAT('AT+COPS?', 'OK', WAIT_TIME)
-        waitAT('AT+CGACT=0,1', 'OK', WAIT_TIME)
+        #waitAT('AT+CGACT=0,1', 'OK', WAIT_TIME)
         waitAT('AT+CGACT=1,1', 'OK', WAIT_TIME)
         output,flag = waitAT('AT+CGDCONT?', 'OK', WAIT_TIME)
         if flag:
@@ -191,24 +253,18 @@ def activatePdpContext():
         waitAT('AT+CGDATA="M-RAW_IP",1', 'CONNECT',WAIT_TIME)
         ip_addr = ipList[0]
         apn = apnList[0]
-
-        interfaceName=None
-        for item in listNetCards():
-            Log.debug(item)
-            if 'p0s17u1i6' in item:
-                interfaceName = item
-                break
         Log.debug('interface name: ' + interfaceName)
         subprocess.call('ifconfig ' + interfaceName + ' down', shell=True)
         subprocess.call('ifconfig ' + interfaceName + ' ' + ip_addr, shell=True)
         subprocess.call('ifconfig ' + interfaceName + ' up', shell=True)
         subprocess.call('ifconfig ' + interfaceName + ' -arp', shell=True)
         subprocess.call('route add default gw ' + ip_addr + ' ' + interfaceName, shell=True)
-        subprocess.call('echo "nameserver 8.8.8.8" > /etc/resolv.conf',shell=True)
+        Log.debug("dns list: "+ str(dnsList)+"\n")
+	subprocess.call('echo "nameserver 8.8.8.8" > /etc/resolv.conf',shell=True)
         for nameserver in dnsList:
             subprocess.call('echo "nameserver ' + nameserver + '" >> /etc/resolv.conf', shell=True)
         Log.debug('ifconfig configuration list:')
-        subprocess.call('ifconfig', shell=True)
+        #subprocess.call('ifconfig', shell=True)
         Log.debug('route table:')
         subprocess.call('route', shell=True)
         Log.debug('DNS configuration:')
@@ -224,9 +280,9 @@ def listNetCards():
 
 if __name__ == '__main__':
     openDefaultSerialPort()
-    gen.startWiresharkTraceThread('/home/root/itest/logs/udp.cap')
+    #gen.startWiresharkTraceThread('/home/pi/itest/logs/udp.cap')
     detachDev()
     attachDefaultDev()
     activatePdpContext()
     Log.debug(listNetCards())
-    gen.stopWiresharkTrace()
+    #gen.stopWiresharkTrace()
